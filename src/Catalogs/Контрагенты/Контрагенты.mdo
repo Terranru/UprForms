@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9807365a-81c0-4470-8572-4be24f7950ca">
+  <producedTypes>
+    <objectType typeId="9379e060-7abe-4d85-a182-ded567ed92b3" valueTypeId="00b4c3e7-2f58-480c-8d13-89e711c7f218"/>
+    <refType typeId="f3522f00-153a-4ede-a9c7-9bbb57e706f3" valueTypeId="ce085e09-c615-4337-afec-4ad7740db7ab"/>
+    <selectionType typeId="6936d937-3b1b-488b-bca9-b43ce4c910ce" valueTypeId="5b6d5765-b6e4-42df-8ecb-39c19d700e35"/>
+    <listType typeId="804a9b47-2fff-4698-ab33-70e88179970d" valueTypeId="b2353a46-2d2c-4b8f-97e1-f7ac0842715e"/>
+    <managerType typeId="102e9463-d37b-4d47-81e0-c2438030882a" valueTypeId="e1e8292f-3c8c-4834-8f12-4f26b1b0b405"/>
+  </producedTypes>
+  <name>Контрагенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контрагенты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Контрагенты.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Контрагенты.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="39be4840-2779-415a-bd8a-fbbd897bf8d0">
+    <name>ОсновнойДоговор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Договоры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Catalog.Контрагенты.StandardAttribute.Ref</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
