@@ -418,6 +418,12 @@
         <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
         <choiceForm>Catalog.Номенклатура.Form.ФормаСписка1</choiceForm>
+        <choiceParameterLinks>
+          <name>СкладИзДокумента</name>
+          <datapath xsi:type="form:DataPath">
+            <segments>Объект.Склад</segments>
+          </datapath>
+        </choiceParameterLinks>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">

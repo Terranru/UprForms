@@ -399,6 +399,10 @@
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
@@ -435,7 +439,7 @@
 	Номенклатура.ИмяПредопределенныхДанных,
 	ОстаткиТоваровОстатки.КоличествоОстаток
 ИЗ
-	РегистрНакопления.ОстаткиТоваров.Остатки КАК ОстаткиТоваровОстатки
+	РегистрНакопления.ОстаткиТоваров.Остатки(, Склад = &amp;ПараметрСклад) КАК ОстаткиТоваровОстатки
 		ПРАВОЕ СОЕДИНЕНИЕ Справочник.Номенклатура КАК Номенклатура
 		ПО ОстаткиТоваровОстатки.Товар = Номенклатура.Ссылка</queryText>
       <mainTable>Catalog.Номенклатура</mainTable>
@@ -484,6 +488,10 @@
         <dataPath>Товар</dataPath>
         <field>Товар</field>
       </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Склад</dataPath>
+        <field>Склад</field>
+      </fields>
       <parameters>
         <name>Период</name>
         <title>
@@ -498,6 +506,21 @@
           <types>Date</types>
           <dateQualifiers/>
         </valueType>
+      </parameters>
+      <parameters>
+        <name>ПараметрСклад</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Параметр склад</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>CatalogRef.Склады</types>
+        </valueType>
+        <useRestriction>true</useRestriction>
       </parameters>
     </extInfo>
   </attributes>
