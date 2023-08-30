@@ -45,6 +45,7 @@
   <catalogs>Catalog.КонтактныеЛица</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Склады</catalogs>
   <documents>Document.ПоступлениеТоваров</documents>
   <documents>Document.ПродажаТоваров</documents>
   <accumulationRegisters>AccumulationRegister.ОстаткиТоваров</accumulationRegisters>
