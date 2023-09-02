@@ -100,6 +100,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="75abb21c-b7b4-4002-ba33-f03ee9afa751">
+    <name>ФормаПодбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="b65c735c-aacf-440a-a09f-af918857be06">
     <producedTypes>
       <objectType typeId="b7220527-45d4-4710-85ec-75fe2f42efa7" valueTypeId="e081bc0d-2ce1-48e8-85ce-4ead4c6de1e2"/>
